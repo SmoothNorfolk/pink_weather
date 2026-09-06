@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Weather 🎀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-hearts">♡　♡　☁️　♡　♡</div>
+
+    <main class="weather-app">
+
+        <header>
+            <div>
+                <span class="logo">🌸 PINK WEATHER</span>
+                <h1>Ma météo</h1>
+            </div>
+
+            <button id="locationBtn">📍 Ma position</button>
+        </header>
+
+        <form id="searchForm">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Chercher une ville..."
+                autocomplete="off"
+            >
+
+            <button type="submit">Rechercher ✨</button>
+        </form>
+
+        <p id="status"></p>
+
+        <section class="current-weather">
+
+            <div>
+                <p class="city" id="city">Amiens, France</p>
+
+                <div class="temperature">
+                    <span id="temperature">--</span>
+                    <span>°C</span>
+                </div>
+
+                <h2 id="condition">Chargement...</h2>
+
+                <p id="details">
+                    💧 --%　 💨 -- km/h
+                </p>
+            </div>
+
+            <div class="weather-icon" id="weatherIcon">
+                ☁️
+            </div>
+
+        </section>
+
+        <h2 class="forecast-title">Prévisions ✨</h2>
+
+        <section class="forecast" id="forecast"></section>
+
+        <footer>
+            Made with 💗 · Données météo via Open-Meteo
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
